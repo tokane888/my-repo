@@ -5,3 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo ${{ github.actor }}
+            - run: echo ${{ runner.name }}
+            - run: echo ${{ runner.os }}
+            - run: echo ${{ runner.arch }}
+            - run: echo ${{ runner.temp }}
