@@ -1,0 +1,9 @@
+name: Concurrency
+on: push
+concurrency: ${{ github.workflow }}
+jobs:
+    sleep:
+        runs-on: ubuntu-latest
+        timeout-minutes: 3
+        steps:
+            - run: sleep 120
