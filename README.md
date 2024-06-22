@@ -1,3 +1,3 @@
 # my-repo
 
-test message
+hoge
