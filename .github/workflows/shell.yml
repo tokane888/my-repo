@@ -1,5 +1,6 @@
 name: Change shell
 on: push
+# shell指定は明示的に行うべき。行わないとpipefail起動オプションが有効にならない
 defaults:
     run:
         shell: bash
