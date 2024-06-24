@@ -1,9 +1,0 @@
-name: Timeout
-on: push
-jobs:
-    sleep:
-        runs-on: ubuntu-latest
-        # default timeoutは360分なので、常にtimeoutは設定するべき
-        timeout-minutes: 1
-        steps:
-            - run: sleep 120
