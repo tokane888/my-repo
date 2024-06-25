@@ -1,5 +1,7 @@
 version: 2
 updates:
+  # 動確時の手動実行はブラウザで当該repository表示後に、下記手順で実施
+  # Insights => Dependency graph => Dependabot => Recent  update jobs => Check for updates
   - package-ecosystem: github-actions
     directory: / # パッケージマニフェスト配置先ディレクトリ。ただしGithub actionのみ固定で"/"
     schedule:
