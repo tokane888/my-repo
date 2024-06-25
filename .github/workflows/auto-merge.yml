@@ -10,7 +10,10 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         steps:
-            - id: meta
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Get Metadata
+              id: meta
               uses: dependabot/fetch-metadata@v2
             - name: Auto merge Dependabot PR
               if: |
