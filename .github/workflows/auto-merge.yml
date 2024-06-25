@@ -15,6 +15,7 @@ jobs:
             - name: Get Metadata
               id: meta
               uses: dependabot/fetch-metadata@v2
+              # depandabotが作成したGitHub Action workflowのPRを自動マージ。ただしactionのmajor updateはマージしない
             - name: Auto merge Dependabot PR
               if: |
                 steps.meta.outputs.package-ecosystem == 'github_actions' &&
